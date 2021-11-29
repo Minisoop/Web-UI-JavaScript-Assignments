@@ -5,7 +5,7 @@ function matchEmail(emailIn){
 
 //                                                                         expected | actual
 console.log("my.email@email.ac.uk - " + matchEmail("my.email@email.ac.uk")); //true | true
-console.log("my.email@email.ac.uk - " + matchEmail("my.email@email.acuk.")); //false | false
+console.log("my.email@email.acuk. - " + matchEmail("my.email@email.acuk.")); //false | false
 console.log("my.email@email.com - " + matchEmail("my.email@email.com")); //true | true
 console.log(".myemail@email.com - " + matchEmail(".myemail@email.com")); //false | true
 console.log("myemail.@email.com - " + matchEmail("myemail.@email.com")); //false | false
